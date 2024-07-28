@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Personal Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/mac.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">Portfolio</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+        <a href="#home" class="w3-bar-item w3-button">Home</a>
+      <a href="#about" class="w3-bar-item w3-button">ABOUT ME</a>
+      <a href="#skill" class="w3-bar-item w3-button"> SKILLS</a>
+      <a href="#project " class="w3-bar-item w3-button">PROJECTS</a>
+      
+      <!-- <a href="#experience" class="w3-bar-item w3-button">EXPERIENCES</a> -->
+      <a href="#contact" class="w3-bar-item w3-button"> CONTACT ME</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close &times;</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <img src="logo.jpeg" alt="" srcset="" id="logo">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <h1 id="Name">Hello It's me <br> Fatima Abbullahi<br> and I am a Web Developer</h1>
+    <div class="objective">
+    <p id="objective">A car is a wheeled, self-powered motor vehicle used for transportation. Most definitions of the term specify that cars are designed to run primarily on roads, to have seating for one to eight people, to typically have four wheels. (Wikipedia)</p>
+    
+    <button>Download CV</button>
+    
+  </div>
+    <!-- <span class="w3-jumbo w3-hide-small">Start something that matters</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br>
+    <span class="w3-large">Stop wasting valuable time with projects that just isn't you.</span> -->
+   
+    <!-- <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
+     -->
+    
+  </div> 
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <!-- <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i> -->
+    <i class="fa fa-whatsapp w3-hover-opacity"></i>
+    <i class="fa fa-github w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:85px 16px 0 16px" id="about">
+  <h1 class="w3-center">ABOUT ME</h1>
+  <p class="w3-center w3-large">Get to know me better!</p>
+  <div class="w3-row-padding w3-center">
+    <div>
+      <img src="logo.jpeg" alt="" srcset="" id="logoLeft">
+    </div>
+    <div>
+      <p id="aboutme">
+        Your “About me” page forms the first impression of a company or product, puts a name and a face to your business, and gives website visitor the opportunity to develop a connection with you (a good reason for a visitor to stay on your website!), and it is your best chance to convert more visits to enquiries/more enquiries to customers.
+        
+      </p>
+      
+    </div>
+    <!-- <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Responsive</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Passion</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Design</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Support</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div> -->
+  </div>
+</div>
+
+<!-- Promo Section - "We know design" -->
+<div class="w3-container " style="padding:5px 16px" >
+  <div class="w3-row-padding">
+    <h1 class="w3-left">Certificates of Appreciation</h1>
+    <div class="w3-row-padding w3-grayscale" style="margin-top:20px">
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <div class="w3-container">
+              <h3 class="w3-center">FreeCodeCamp</h3>
+          </div>
+          <img src="certifecat1.png" class="project" alt="John" style="width:100%">
+          
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <div class="w3-container">
+            <h3 class="w3-center">FreeCodeCamp</h3>
+          </div>
+          <img src="sertifecat2.png" class="project" alt="Jane" style="width:100%">
+          
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <div class="w3-container">
+            <h3 class="w3-center">FreeCodeCamp</h3>
+          </div>
+          <img src="certifecat1.png" class="project" alt="Mike" style="width:100%">
+          
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <div class="w3-container">
+            <h3 class="w3-center">FreeCodeCamp</h3>
+          </div>
+          <img src="sertifecat2.png" class="project" alt="Dan" style="width:100%">
+          
+        </div>
+      </div>
+    </div>
+
+  <!-- Skills Section -->
+<div class="w3-container  w3-padding-64" style="padding:140px 16px" id="skill">
+  <h1 class="w3-center">My Skills</h1>
+  <div class="w3-row-padding divpadding">
+    
+    <div class="w3-col m6">
+      <a href="#" class="prskill">Technical Skills</a><br><br>
+      <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>HTML</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>CSS</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:85%">85%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>JavaScript</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:75%">75%</div>
+      </div>
+      
+    </div>
+    <div class="w3-col m6 ">
+     <a href="#" class="prskill">Profesional Skills</a>
+    <div class="row-1">
+     <div class="eb-progress-bar-wrapper">
+     
+       <div class="eb-progress-bar html" style="--value: 85; --col: #31DBF2">
+         
+         <progress id="html" min="0" max="100" value="85"></progress>
+      
+       </div>
+       <!-- <label for="html" class="eb-progress-bar-title">
+         <h2>Html</h2>
+       </label> -->
+     </div>
+    
+    
+     <div class="eb-progress-bar-wrapper">
+     
+       <div class="eb-progress-bar css" style="--value: 91; --col: #31DBF2">
+         <progress id="css" min="0" max="100" value="91"></progress>
+       </div>
+       <!-- <label for="css" class="eb-progress-bar-title">
+         <h2>Css</h2>
+       </label> -->
+     </div>
+    </div>
+    
+     <div class="row-2">
+     <div class="eb-progress-bar-wrapper">
+     
+      <div class="eb-progress-bar css" style="--value: 91; --col: #31DBF2">
+        <progress id="css" min="0" max="100" value="91"></progress>
+      </div>
+      <!-- <label for="css" class="eb-progress-bar-title">
+        <h2>Css</h2>
+      </label> -->
+    </div>
+   
+    <div class="eb-progress-bar-wrapper">
+     
+      <div class="eb-progress-bar css" style="--value: 68; --col: #31DBF2">
+        <progress id="css" min="0" max="100" value="68"></progress>
+      </div>
+      <!-- <label for="css" class="eb-progress-bar-title">
+        <h2>Css</h2>
+      </label> -->
+    </div>
+</div>
+    </div>
+  </div>
+</div>
+<div class="w3-container" style="padding:50px 16px 0 16px" id="project">
+ 
+  
+    <h1 class="w3-center ">MY PROJECTS</h1>
+    <p class="w3-center w3-large">click on project image to see more details</p>
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 5</div>
+        <img src="img/pro1.png" style="width:100%">
+        <div class="text">Caption Text</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 5</div>
+        <img src="img/pro2.png" style="width:100%">
+        <div class="text">Caption Two</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 5</div>
+        <img src="img/pro3.png" style="width:100%">
+        <div class="text">Caption Three</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+        <img src="img/pro4.png" style="width:100%">
+        <div class="text">Caption Two</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <img src="img/pro5.png" style="width:100%">
+        <div class="text">Caption Three</div>
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+<!--       
+    <button id="seemore">See More</button> -->
+    <div class="w3-row-padding">
+     
+      <div class="w3-quarter">
+        <img src="img/pro2.png" alt="" class="certificate">
+      </div>
+      <div class="w3-quarter">
+        <img src="img/pro3.png" alt="" class="certificate">
+      </div>
+      <div class="w3-quarter">
+        <img src="img/pro4.png" alt="" class="certificate">
+      </div>
+      <div class="w3-quarter">
+        <img src="img/pro5.png" alt="" class="certificate">
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:0px 16px" >
+ 
+</div>
+
+
+<!-- Contact Section -->
+<div class="w3-container  contactme" style="padding:75px 30px" id="contact">
+  
+  <!-- <p class="w3-center w3-large">I would always love to hear from you</p> -->
+  <div class="outerdiv" style="margin-top:10px; padding: 30px; border-radius: 10px; display: flex; ">
+    <div class="innerdiv">
+      <h1 class="">Let's Get in Touch</h1>
+      <p>I’m very approachable and would love to speak to you. Feel free to call, send me an email . Follow me in social media or simply complete the enquiry form.</p>
+     <!-- <h2>Feel Free To Contact Me</h2>
+    <p><i class="fa fa-map-marker cntct"></i>&nbsp; Kabul, AFG</p> -->
+     <p><i class="fa fa-phone fa-fw cntct"></i>&nbsp; Phone: +93773162866</p>
+    <p><i class="fa fa-envelope cntct"> </i> &nbsp; Email: fatima33abdullahi@mail.com</p> 
+    <br><br>
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+    
+    <div class="innerdiv">
+      
+      <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+        <!-- <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p> -->
+        <p><input class="w3-input w3-border msg" type="text" placeholder="Message" required name="Message"></p>
+        <p>
+          <button class="send-btn" type="submit">
+            SEND 
+          </button>
+        </p>
+      </form>
+    </div>
+   
+   
+  </div>
+</div>
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+ 
+
+<script src="script.js"></script>
+</body>
+</html>
