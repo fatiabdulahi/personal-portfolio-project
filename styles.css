@@ -1,5 +1,5 @@
 .w3-white {
-    background-color: #040E46!important;   
+  background-color: #040E46!important;   
 }
 
 a {
@@ -102,7 +102,8 @@ h1 , p {
   box-shadow: #31DBF2 !important;
 }
 
-@property --eb-progress-value {
+@property --eb-progress-value
+ {
   syntax: "<integer>";
   inherits: false;
   initial-value: 0;
@@ -126,7 +127,8 @@ h1 , p {
   height: 100vh;
 } */
 
-.eb-progress-bar {
+.eb-progress-bar
+{
   --size: 4.5rem;
   --inner-bg: #f2f2f2;
   --primary-color: var(--col);
@@ -180,7 +182,7 @@ h1 , p {
     right bottom,
     color-stop(0%, #ffffff),
     color-stop(100%, #d3d1cb)
-  );
+);
   box-shadow: 1px 1px 3px rgb(0 0 0 / 15%);
   padding: 10px 10px;
   border-radius: 50%;
@@ -210,8 +212,8 @@ progress {
   float: left;
   margin-left: 20px;
   margin-top: 25px;
-font-size: 28px;
-font-weight: bold;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .w3-grey {
@@ -525,10 +527,9 @@ input::placeholder {
   .w3-black {
     margin-top: -31px !important;
   }
-  #seemore{
+  #seemore {
     margin: 10px;
   }
-  
   .eb-progress-bar-title > p {
     font-size: 9px;
     font-weight: 100;
