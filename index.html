@@ -56,13 +56,13 @@ body, html {
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close &times;</a>
+  <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
-  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
-  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+  <a href="#skill" onclick="w3_close()" class="w3-bar-item w3-button">SKILLS</a>
+  <a href="#project" onclick="w3_close()" class="w3-bar-item w3-button">PROJECTS</a>
   <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
 </nav>
-
+g
 <!-- Header with full-height image -->
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
   <img src="logo.jpeg" alt="" srcset="" id="logo">
@@ -71,23 +71,15 @@ body, html {
     <div class="objective">
     <p id="objective">A car is a wheeled, self-powered motor vehicle used for transportation. Most definitions of the term specify that cars are designed to run primarily on roads, to have seating for one to eight people, to typically have four wheels. (Wikipedia)</p>
     
-    <button>Download CV</button>
-    
+    <button class="dwnldcv">Download CV</button>
+  
   </div>
-    <!-- <span class="w3-jumbo w3-hide-small">Start something that matters</span><br>
-    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br>
-    <span class="w3-large">Stop wasting valuable time with projects that just isn't you.</span> -->
-   
-    <!-- <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
-     -->
+
     
   </div> 
   <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
 
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <!-- <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i> -->
     <i class="fa fa-whatsapp w3-hover-opacity"></i>
     <i class="fa fa-github w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
@@ -97,8 +89,8 @@ body, html {
 
 <!-- About Section -->
 <div class="w3-container" style="padding:85px 16px 0 16px" id="about">
-  <h1 class="w3-center">ABOUT ME</h1>
-  <p class="w3-center w3-large">Get to know me better!</p>
+  <h1 class="w3-center h1about">ABOUT ME</h1>
+  <p class="w3-center w3-large know ">Get to know me better!</p>
   <div class="w3-row-padding w3-center">
     <div>
       <img src="logo.jpeg" alt="" srcset="" id="logoLeft">
@@ -110,26 +102,7 @@ body, html {
       </p>
       
     </div>
-    <!-- <div class="w3-quarter">
-      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
-      <p class="w3-large">Responsive</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Passion</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Design</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Support</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-    </div> -->
+
   </div>
 </div>
 
@@ -197,7 +170,7 @@ body, html {
       </div>
       
     </div>
-    <div class="w3-col m6 ">
+    <div class="w3-col m6 msr">
      <a href="#" class="prskill">Profesional Skills</a>
     <div class="row-1">
      <div class="eb-progress-bar-wrapper">
@@ -207,9 +180,9 @@ body, html {
          <progress id="html" min="0" max="100" value="85"></progress>
       
        </div>
-       <!-- <label for="html" class="eb-progress-bar-title">
-         <h2>Html</h2>
-       </label> -->
+       <label for="html" class="eb-progress-bar-title">
+         <p>Creativity</p>
+       </label>
      </div>
     
     
@@ -218,9 +191,9 @@ body, html {
        <div class="eb-progress-bar css" style="--value: 91; --col: #31DBF2">
          <progress id="css" min="0" max="100" value="91"></progress>
        </div>
-       <!-- <label for="css" class="eb-progress-bar-title">
-         <h2>Css</h2>
-       </label> -->
+       <label for="css" class="eb-progress-bar-title">
+         <p>Team work</p>
+       </label>
      </div>
     </div>
     
@@ -230,9 +203,9 @@ body, html {
       <div class="eb-progress-bar css" style="--value: 91; --col: #31DBF2">
         <progress id="css" min="0" max="100" value="91"></progress>
       </div>
-      <!-- <label for="css" class="eb-progress-bar-title">
-        <h2>Css</h2>
-      </label> -->
+      <label for="css" class="eb-progress-bar-title">
+        <p>Communication</p>
+      </label>
     </div>
    
     <div class="eb-progress-bar-wrapper">
@@ -240,9 +213,9 @@ body, html {
       <div class="eb-progress-bar css" style="--value: 68; --col: #31DBF2">
         <progress id="css" min="0" max="100" value="68"></progress>
       </div>
-      <!-- <label for="css" class="eb-progress-bar-title">
-        <h2>Css</h2>
-      </label> -->
+      <label for="css" class="eb-progress-bar-title">
+        <p>Problem Solving</p>
+      </label>
     </div>
 </div>
     </div>

@@ -20,6 +20,7 @@ body{
 h1 , p {
   color: white !important;
 }
+
 #Name {
   color: black;
   margin-left: 142px;
@@ -37,7 +38,6 @@ h1 , p {
   padding: 10px !important;
   color: #31DBF2;
   border: 1px solid #31DBF2;
-  background-color: #052B3C;
 }
 
 #objective {
@@ -48,7 +48,7 @@ h1 , p {
 .objective {
   height: 150px;
   width: 509px;
-  margin-left: 142px;
+  margin-left: 142px; 
 }
 
 #logo {
@@ -345,6 +345,13 @@ input::placeholder {
   top: 0;
 }
 
+.eb-progress-bar-title > p {
+  font-size: 9px;
+  font-weight: 100;
+  letter-spacing: 0px;
+  margin-left: 95px;
+}
+
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
@@ -385,21 +392,28 @@ input::placeholder {
     margin-left: auto;
     margin-right: auto;
   }
+
   #Name {
-    text-align: center;
     margin-left: 0px;
- 
-    /* margin-top: 140px; */
+    font-size: 24px;
+    margin-top: 60px;
   }
   .objective {
+    height: auto;
+    width: auto;
     margin-left: 0;
-    width: 100%;  
-    align-items: center;
+ }
+
+ #objective{
+  font-size: 14px;
+ }
+  p {
+    font-size: 14px;
   }
 
-  #objective {
-    text-align: center;
-  }
+ .know {
+  display: none;
+ }
 
   .w3-display-left {
     display:block;
@@ -419,7 +433,7 @@ input::placeholder {
     margin-left: auto;
     margin-right: auto;
   }
-
+ 
   .w3-about {
     display: flex;
     width: 100%;
@@ -434,22 +448,53 @@ input::placeholder {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    height: 200px;
+    width: 200px;
+    margin-top: 0;
+    float: none;
   }
 
   .aboutme {
     padding: 50px 16px !important;
   }
-
+  
+  .h1about {
+    margin-top: 0;
+  }
+  .w3-left {
+    font-size: 18px;
+    font-weight: 800;
+  }
+  
+  .prskill {
+    margin-left: 80px;
+    margin-top: 30px;
+  }
+  
   .certificate {
     width: 100%;
   }
+  
+  .msr {
+    margin-top: 20px;
+  }
+
+  .dwnldcv{
+    margin-top: 80px;
+  }
+
   .pleft {
     display: none;
   }
   .eb-progress-bar-wrapper {
     display: inline-block;
-    width:30%;
+    width:45%;
   }
+
+  .eb-progress-bar {
+    margin-left: 20px;
+  }
+
   .headings {
     display: block !important;
     padding: 20px;
@@ -469,13 +514,26 @@ input::placeholder {
   }
   .outerdiv {
     border: none !important;
-    background-color: #f1f1f1 !important;
+    background-color: transparent !important;
     display: block !important;
   }
+
+  .send-btn {
+    margin-left: 20px !important;
+  }
+
   .w3-black {
     margin-top: -31px !important;
   }
   #seemore{
     margin: 10px;
   }
+  
+  .eb-progress-bar-title > p {
+    font-size: 9px;
+    font-weight: 100;
+    letter-spacing: 0px;
+    margin-left: 0;
+  }
+
 }
