@@ -26,6 +26,10 @@
   display: none;
 }
 
+.pro1 {
+  width: 100%;
+}
+
 #skill {
   padding:140px 16px;
 }
@@ -368,6 +372,17 @@ input::placeholder {
   background-color: rgba(0,0,0,0.8);
 }
 
+.social {
+  text-align: center;
+}
+
+.outerdiv { 
+  margin-top:10px;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex ;
+}
+
 .text {
   color: #f2f2f2;
   font-size: 15px;
@@ -561,10 +576,6 @@ input::placeholder {
     border: none !important;
     background-color: transparent !important;
     display: block !important;
-    margin-top:10px;
-    padding: 30px;
-    border-radius: 10px;
-    display: flex;
   }
 
   .send-btn {
