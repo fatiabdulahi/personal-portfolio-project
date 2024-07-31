@@ -1,6 +1,6 @@
-
-function w3_close() {
-    mySidebar.style.display = "none";
+let mySidebar = document.getElementById('mySidebar');
+function w3Close() {
+  mySidebar.style.display = "none";
 }
 
 let slideIndex = 1;
