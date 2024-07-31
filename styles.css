@@ -19,7 +19,7 @@
 }
 
 .w3-white {
-  background-color: #040E46!important;   
+  background-color: #040e46!important;   
 }
 
 #mySidebar {
@@ -62,7 +62,7 @@ a {
 }
 
 body{
-  background-color: #052B3C;
+  background-color: #052b3c;
   color: white;
 }
 
@@ -92,8 +92,8 @@ h1 , p {
   border-radius: 50%;
   display: inline!important;
   padding: 10px !important;
-  color: #31DBF2;
-  border: 1px solid #31DBF2;
+  color: #31dbf2;
+  border: 1px solid #31dbf2;
 }
 
 #objective {
@@ -113,7 +113,7 @@ h1 , p {
   border-radius: 50%;
   height: 300px;
   width: 300px;
-  border: 2px solid #511F52;
+  border: 2px solid #511f52;
 }
 
 #logoLeft {
@@ -123,7 +123,7 @@ h1 , p {
   height: 250px;
   width: 250px;
   float: left;
-  border: 2px solid #511F52;
+  border: 2px solid #511f52;
 }
 
 #aboutme {
@@ -160,7 +160,7 @@ h1 , p {
 
 .w3-card {
   background-color: black;
-  box-shadow: #31DBF2 !important;
+  box-shadow: #31dbf2 !important;
 }
 
 @property --eb-progress-value
@@ -185,7 +185,7 @@ h1 , p {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0px 2px rgb(0 0 0 / 40%), inset 0 0px 1px rgb(0 0 0 / 30%),
+  box-shadow: 0 0 2px rgb(0 0 0 / 40%), inset 0 0 1px rgb(0 0 0 / 30%),
     0 1px 2px rgb(0 0 0 / 60%), 0 4px 2px rgb(0 0 0 / 20%),
     0 9px 4px rgb(0 0 0 / 10%), inset 0 2px 1px #ffffff8c;
   width: var(--size);
@@ -229,7 +229,7 @@ h1 , p {
     linear,
     right top,
     right bottom,
-    color-stop(0%, #ffffff),
+    color-stop(0%, #fff),
     color-stop(100%, #d3d1cb)
 );
   box-shadow: 1px 1px 3px rgb(0 0 0 / 15%);
@@ -272,7 +272,7 @@ progress {
 }
 
 .w3-dark-grey {
-  background-color: #31DBF2 !important;
+  background-color: #31dbf2 !important;
   border-radius: 20px !important;
   height: 25px !important;
 }
@@ -316,11 +316,11 @@ progress {
 
 .w3-border {
   border-radius: 20px;
-  border: 2px solid #31DBF2 !important;
+  border: 2px solid #31dbf2 !important;
 }
 
 input {
-  background-color:#98A9AF ;
+  background-color:#98a9af ;
   padding: 10px !important;
 }
 
@@ -330,8 +330,8 @@ input {
 
 .send-btn {
   border-radius: 20px;
-  border: 2px solid #31DBF2;
-  background-color:#052B3C;
+  border: 2px solid #31dbf2;
+  background-color:#052b3c;
   margin-left:130px !important;
   color: white;
   width: 250px;
@@ -445,7 +445,7 @@ input::placeholder {
   }
 
   #Name {
-    margin-left: 0px;
+    margin-left: 0;
     font-size: 24px;
     margin-top: 60px;
   }
@@ -469,7 +469,7 @@ input::placeholder {
  }
 
   .w3-display-left {
-    display:block;
+    display: block;
     margin-top: 130px;
     align-items: center;
     padding: 48px;
@@ -481,7 +481,7 @@ input::placeholder {
     position: relative;
   }
 
-  .button{
+  .button {
     margin-top: 30px; 
     align-items: center;
     margin-left: auto;
@@ -533,7 +533,7 @@ input::placeholder {
     margin-top: 20px;
   }
 
-  .dwnldcv{
+  .dwnldcv {
     margin-top: 80px;
   }
 
@@ -593,7 +593,7 @@ input::placeholder {
   .eb-progress-bar-title > p {
     font-size: 9px;
     font-weight: 100;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     margin-left: 0;
   }
 
