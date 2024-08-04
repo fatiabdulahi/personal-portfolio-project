@@ -47,7 +47,7 @@ body, html {
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium "  id="drawer">
       <i class="fa fa-bars"></i>
     </a>
   </div>
@@ -55,12 +55,12 @@ body, html {
 
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3Close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close &times;</a>
-  <a href="#home" onclick="w3Close()" class="w3-bar-item w3-button">Home</a>
-  <a href="#about" onclick="w3Close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="#skill" onclick="w3Close()" class="w3-bar-item w3-button">SKILLS</a>
-  <a href="#project" onclick="w3Close()" class="w3-bar-item w3-button">PROJECTS</a>
-  <a href="#contact" onclick="w3Close()" class="w3-bar-item w3-button">CONTACT</a>
+  <a href="javascript:void(0)"  class="w3-bar-item w3-button w3-large w3-padding-16 close">Close &times;</a>
+  <a href="#home"  class="w3-bar-item w3-button close">Home</a>
+  <a href="#about"  class="w3-bar-item w3-button close">ABOUT</a>
+  <a href="#skill"  class="w3-bar-item w3-button close">SKILLS</a>
+  <a href="#project" class="w3-bar-item w3-button close">PROJECTS</a>
+  <a href="#contact"  class="w3-bar-item w3-button close">CONTACT</a>
 </nav>
 g
 <!-- Header with full-height image -->

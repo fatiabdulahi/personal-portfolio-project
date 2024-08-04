@@ -1,8 +1,3 @@
-let mySidebar = document.getElementById('mySidebar');
-function w3Close() {
-  mySidebar.style.display = "none";
-}
-
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -30,3 +25,25 @@ for (i = 0; i < dots.length; i++) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+const mySidebar = document.getElementById('mySidebar');
+
+function w3Open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+function w3Close() {
+  mySidebar.style.display = 'none';
+}
+
+const drawerLink = document.getElementById('drawer');
+drawerLink.onclick = w3Open;
+
+const closeLinks = document.getElementsByClassName('close');
+Array.from(closeLinks).forEach((closeLink) => {
+  closeLink.onclick = w3Close;
+});
