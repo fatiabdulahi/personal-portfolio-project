@@ -21,8 +21,6 @@ Examples:
 - CSS
 - JavaScript
 
-
-
 ## Installation 💻
 
 Folow these steps to set up the project on your local machine Ensure you have the following software installed on your machine
