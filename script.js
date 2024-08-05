@@ -1,9 +1,17 @@
 let slideIndex = 1;
+let prevslid = document.getElementById('prev');
+let nextslid = document.getElementById('next');
+let doted = document.getElementsByClassName('dot');
+
 showSlides(slideIndex);
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
+
+
+prevslid.onclick = plusSlides(-1);
+nextslid.onclick = plusSlides(1);
 
 function currentSlide(n) {
   showSlides(slideIndex = n);
