@@ -3,7 +3,24 @@ const prevslid = document.getElementById('prev');
 const nextslid = document.getElementById('next');
 const doted = document.getElementsByClassName('dot');
 
-function plusSlides(n) {
+function showSlides(n) {
+  let i;
+  const slides = document.getElementsByClassName('mySlides');
+  const dots = document.getElementsByClassName('dot');
+  if (n > slides.length) { slideIndex = 1; }    
+  if (n < 1) { slideIndex = slides.length }
+  for (i = 0; i < slides.length; i + 1) {
+    slides[i].style.display = 'none';
+}
+
+for (i = 0; i < dots.length; i + 1) {
+    dots[i].className = dots[i].className.replace('active','');
+  }
+  slides[slideIndex - 1].style.display = 'block';  
+  dots[slideIndex - 1].className += 'active';
+}
+
+function plusSlides (n) {
   showSlides(slideIndex += n);
 }
 
@@ -15,29 +32,16 @@ nextslid.onclick = function() {
   plusSlides(1);
 };
 
-function showSlides(n) {
-  let i;
-  const slides = document.getElementsByClassName('mySlides');
-  let dots = document.getElementsByClassName('dot');
-  if (n > slides.length) { slideIndex = 1 }    
-  if (n < 1) { slideIndex = slides.length }
-  for (i = 0; i < slides.length; i++) {
-  slides[i].style.display = 'none';  
-}
-
-for (i = 0; i < dots.length; i++) {
-  dots[i].className = dots[i].className.replace('active', '');
-  }
-  slides[slideIndex-1].style.display = 'block';  
-  dots[slideIndex-1].className += 'active';
-}
-
 showSlides(slideIndex);
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
 const dots = Array.from(doted); // Convert the HTMLCollection to an array
 
 dots.forEach((dot, index) => {
-  dot.onclick = function() {
+  dot.onclick = function () {
     currentSlide(index + 1);
   };
 });
