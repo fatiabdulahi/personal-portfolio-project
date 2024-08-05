@@ -7,8 +7,13 @@ function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-prevslid.onclick = plusSlides(-1);
-nextslid.onclick = plusSlides(1);
+prevslid.onclick = function() {
+  plusSlides(-1);
+};
+
+nextslid.onclick = function() {
+  plusSlides(1);
+};
 
 function showSlides(n) {
   let i;
@@ -29,9 +34,13 @@ for (i = 0; i < dots.length; i++) {
 
 showSlides(slideIndex);
 
-// function currentSlide(n) {
-//   showSlides(slideIndex = n);
-// }
+const dots = Array.from(doted); // Convert the HTMLCollection to an array
+
+dots.forEach((dot, index) => {
+  dot.onclick = function() {
+    currentSlide(index + 1);
+  };
+});
 
 const mySidebar = document.getElementById('mySidebar');
 
