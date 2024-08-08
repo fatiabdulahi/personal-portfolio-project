@@ -9,11 +9,11 @@ function showSlides(n) {
   const dots = document.getElementsByClassName('dot');
   if (n > slides.length) { slideIndex = 1; }
   if (n < 1) { slideIndex = slides.length; }
-  for (i = 0; i < slides.length; i + 1) {
+  for (i = 0; i < slides.length; i += 1) {
     slides[i].style.display = 'none';
   }
 
-  for (i = 0; i < dots.length; i + 1) {
+  for (i = 0; i < dots.length; i += 1) {
     dots[i].className = dots[i].className.replace('active', '');
   }
   slides[slideIndex - 1].style.display = 'block';
