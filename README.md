@@ -54,6 +54,9 @@ Provide your name and a link to your Social Media profiles. You can also include
 
 - LinkedIn:https://www.linkedin.com/in/fatima-abdullahi-6288662b2
 - Email: fatima333abdullahi@gmail.com
+- facebook: https://www.facebook.com/profile.php?id=100077576768238&mibextid=rS40aB7S9Ucbxw6v 
+- instagram: https://www.instagram.com/125fatimaabdullahi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==
+
 
 ## Contributing 🤝
 
