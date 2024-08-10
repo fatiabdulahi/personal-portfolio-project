@@ -42,6 +42,9 @@ you can access to my project through git clone -git clone the HTTP or My SSH cod
 
 -github usage
 
+## Figma design live link ⭐
+
+https://www.figma.com/design/q6wzEdu9crk5k6PfP4hOF4/Portfolio?m=auto&t=mKn34yEf9oorD5b2-1
 
 
 ## Author 👩‍💻 FATIMA ABDULLAHI
